@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './styleSheet.css';
+import { LuGithub } from "react-icons/lu";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="startSection">
+
+      <h1 id='topHeading'>Software Engineer</h1>
+      <ul className='socialLinks'>
+        <li><a href="#"><LuGithub /></a></li>
+        <li><a href="#"><FaLinkedinIn /></a></li>
+        <li><a href="#"><MdOutlineMailOutline /></a></li>
+      </ul>
+
     </div>
   );
 }
