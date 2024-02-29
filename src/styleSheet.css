@@ -1,6 +1,7 @@
 /* Add this style to make inner icons bigger */
 .socialLinks li a svg {
-    font-size: 24px; /* Adjust the font size as per your preference */
+    font-size: 24px;
+    /* Adjust the font size as per your preference */
 }
 
 body {
@@ -52,7 +53,7 @@ body {
 }
 
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,15 +61,52 @@ body {
     height: 100vh;
 }
 
-.innerLeftContainer, .innerRightContainer{
+.innerLeftContainer,
+.innerRightContainer {
     width: 40%;
 }
-.innerLeftContainer img{
+
+.innerLeftContainer img {
     width: 70%;
 }
-.innerRightContainer h1{
+
+.innerRightContainer h1 {
     font-size: 2.2rem;
 }
-.innerRightContainer p{
+
+.innerRightContainer p {
     font-size: 1.2rem;
+}
+
+
+.iDoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.topContainer, .bottomContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.items{
+    padding: 30px;
+}
+.iDoContainer h1{
+    margin: 0;    
+}
+
+.iDoHeading{
+        padding-left: 70px;
+}
+
+.items h1{
+    font-size: 1.5rem;
+}
+
+::selection{
+    color: red;
 }
