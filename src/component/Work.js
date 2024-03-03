@@ -1,5 +1,5 @@
 import React from 'react';
-import './styleSheet.css';
+import '../styleSheet.css';
 import { BsCodeSlash } from "react-icons/bs";
 import { TbBrandStripe } from "react-icons/tb";
 import { FaMagic } from "react-icons/fa";

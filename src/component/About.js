@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import './styleSheet.css';
+import '../styleSheet.css';
 
 function InnerLeftContainer() {
   return (
     <div className="innerLeftContainer">
-      <img src={require('./images/profile.png')} alt="Profile" />
+      <img src={require('../images/profile.png')} alt="Profile" />
     </div>
   );
 }
