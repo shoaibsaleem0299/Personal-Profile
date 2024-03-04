@@ -4,6 +4,7 @@ import App from './component/App';
 import About from './component/About';
 import Work from './component/Work';
 import Header from './component/Header';
+import Project from './component/Project';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
     <App />
     <About />
     <Work />
+    <Project />
   </React.StrictMode>
 );
 

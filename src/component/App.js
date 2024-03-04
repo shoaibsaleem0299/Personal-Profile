@@ -6,7 +6,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 function App() {
   return (
-
+    
     <div class="startSection">
       <h1 data-aos="fade-right" id='topHeading'>Software Engineer</h1>
       <ul className='socialLinks'>
