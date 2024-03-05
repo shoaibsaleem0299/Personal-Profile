@@ -5,6 +5,7 @@ import About from './component/About';
 import Work from './component/Work';
 import Header from './component/Header';
 import Project from './component/Project';
+import ContactUs from './component/Contact';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <About />
     <Work />
     <Project />
+    <ContactUs />
   </React.StrictMode>
 );
 
