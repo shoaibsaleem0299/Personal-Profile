@@ -58,7 +58,7 @@ function BottomContainer() {
 
 function Work() {
     return (
-        <div className="iDoContainer">
+        <div id='work' className="iDoContainer">
             <div><h1 className='iDoHeading'>what i Do</h1></div>
             <TopContainer />
             <BottomContainer />

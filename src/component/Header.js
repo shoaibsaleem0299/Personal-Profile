@@ -27,13 +27,16 @@ function Header() {
         <span className="navbar-brand mb-0 h1">Shoaib Saleem</span>
         <div>
           <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#'>About</a>
+            <a className='links px-2' href='#about'>About</a>
           </span>
           <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#'>Work</a>
+            <a className='links px-2' href='#work'>Work</a>
           </span>
           <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#'>Projects</a>
+            <a className='links px-2' href='#projects'>Projects</a>
+          </span>
+          <span className="navbar-brand mb-0">
+            <a className='links px-2' href='#contact'>Contact Me</a>
           </span>
         </div>
       </div>

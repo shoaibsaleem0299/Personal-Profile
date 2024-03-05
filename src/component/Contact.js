@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <div className='contact_container'>
+        <div id='contact' className='contact_container'>
             <h1 className='px-4 py-2'>Contact Me</h1>
             <div>
                 <form className='container-fluid'>

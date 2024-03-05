@@ -11,7 +11,7 @@ function Project() {
     }, []);
 
     return (
-        <div className='project_container'>
+        <div id='projects' className='project_container'>
             <h1>Projects</h1>
             <div className='projectContainer'>
                 {projects.map(project => (
