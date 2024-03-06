@@ -36,7 +36,7 @@ function TopContainer() {
 
 function BottomContainer() {
     return (
-        <div className="bottomContainer">
+        <div className="bottomContainer ">
             <div data-aos="fade-right" className='items'>
                 <BsFileRuled style={{ fontSize: '2.5em', color: '#FFD700' }} />
                 <h1>Mobile App</h1>
