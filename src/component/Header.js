@@ -1,47 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
+import '../styleSheet.css';
 
 function Header() {
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    const scrollingDown = prevScrollPos < currentScrollPos;
-
-    setPrevScrollPos(currentScrollPos);
-    setVisible(!scrollingDown || currentScrollPos < 10); // Adjust the threshold as needed
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [prevScrollPos]);
-
   return (
-    <nav
-      className={`navbar bg-body-tertiary Header ${visible ? 'visible' : 'invisible'}`}
-    >
-      <div className="container-fluid px-4">
-        <span className="navbar-brand mb-0 h1">Shoaib Saleem</span>
-        <div>
-          <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#about'>About</a>
-          </span>
-          <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#work'>Work</a>
-          </span>
-          <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#projects'>Projects</a>
-          </span>
-          <span className="navbar-brand mb-0">
-            <a className='links px-2' href='#contact'>Contact Me</a>
-          </span>
-        </div>
+    <div className='custom-header row'>
+      <div className='col-xl-6 col-lg-6 col-sm-12 title'><h2>Shoaib Saleem</h2></div>
+      <div className='links-container col-xl-6 col-lg-'>
+        <a className='links' href='#about'>About</a>
+        <a className='links' href='#work'>Service</a>
+        <a className='links' href='#projects'>Projects</a>
       </div>
-    </nav>
-  );
+    </div>
+  )
 }
 
-export default Header;
+export default Header
