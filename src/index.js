@@ -13,10 +13,10 @@ root.render(
   <React.StrictMode>
     <Header />
     <App />
-    <About />
+    {/* <About />
     <Work />
     <Project />
-    <ContactUs />
+    <ContactUs /> */}
   </React.StrictMode>
 );
 
