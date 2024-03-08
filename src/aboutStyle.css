@@ -1,37 +1,40 @@
-.container {
+.about-container {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
     align-items: center;
-    padding: 20px;
     height: 100vh;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 995px) {
 
-    .container {
+    .about-container {
         flex-direction: column;
     }
 }
 
 .innerLeftContainer {
-    width: 80%;
+    width: 100%;
+    text-align: center;
 }
 
-.innerRigthContainer {
+.innerRightContainer {
     width: 100%;
+    padding: 20px;
+    text-align: center !important;
 }
 
 .innerLeftContainer img {
-    width: 100%;
+    width: 80%;
 }
 
 .innerRightContainer h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .innerRightContainer p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-style: normal;
 }

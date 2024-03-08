@@ -27,7 +27,7 @@ function About() {
   }, []); // Run only once after component mount
 
   return (
-    <div id='about' className="container">
+    <div id='about' className="about-container">
       <InnerLeftContainer />
       <InnerRightContainer />
     </div>
