@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import projectsData from '../data.json'; // Importing project data from data.json
+import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react'
+import '../projectStyle.css'
+
 
 function Project() {
-    // State to hold project data
-    const [projects, setProjects] = useState([]);
 
-    // Fetch project data from data.json when component mounts
+    const [project, setProject] = useState([]);
+
     useEffect(() => {
-        setProjects(projectsData);
-    }, []);
+
+    },
+        []);
+
+
 
     return (
-        <div id='projects' className='project_container'>
-            <h1>Projects</h1>
-            <div className='projectContainer'>
-                {projects.map(project => (
-                    <div className="card" key={project.id}>
-                        <img className="card-img-top" src={project.image} alt={project.title} />
-                        <div className="card-body">
-                            <h5 className="card-title">{project.title}</h5>
-                            <p className="card-text">{project.description}</p>
-                            <a href={project.link} className="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                ))}
+        <div class="card">
+            <img src={require('../images/card.jpg')} alt="Project Image" class="project-image" />
+            <div class="card-content">
+                <h2 class="project-title">Project Title</h2>
+                <p class="project-description">Project Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec eros at urna varius ullamcorper.</p>
+                <div class="links">
+                    <a href="github_link" class="github-link">GitHub</a>
+                    <a href="live_preview_link" class="live-preview-link">Live Preview</a>
+                </div>
             </div>
         </div>
-    );
+    )
 }
 
-export default Project;
+export default Project

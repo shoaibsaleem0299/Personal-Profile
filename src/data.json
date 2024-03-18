@@ -1,7 +1,9 @@
 [
     {
         "id": 1,
+        "img": "./images/card.png",
         "title": "Project 1",
+        "subTile": "Project 1",
         "description": "Description of Project 1",
         "link": "https://example.com/project1"
     },

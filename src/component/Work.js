@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styleSheet.css';
+import '../workStyle.css';
 import { BsCodeSlash } from "react-icons/bs";
 import { TbBrandStripe } from "react-icons/tb";
 import { FaMagic } from "react-icons/fa";
@@ -12,24 +12,45 @@ import { GiPhotoCamera } from "react-icons/gi";
 
 
 
+function HeadingContainer() {
+    return (
+        <div className='Heading'>
+            <h1>What I Do</h1>
+        </div>
+    );
+}
+
+
 function TopContainer() {
     return (
+
+
         <div className="topContainer">
-            <div data-aos="fade-right" className='items'>
-                <BsCodeSlash style={{ fontSize: '3em', color: '#FFD700', fontWeight: 'bold' }} />
-                <h1>Web Development</h1>
-                <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I create innovative solutions that marry design with functionality. Let's work together to bring your digital ideas to life!</p>
+
+            <div data-aos="fade-right" class="card" style={{ width: "22rem" }}>
+                <div class="card-body">
+                    <BsCodeSlash style={{ fontSize: '3em', color: '#FFD700', fontWeight: 'bold' }} />
+                    <h3>Web Development</h3>
+                    <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications.</p>
+                </div>
             </div>
-            <div data-aos="flip-up" className='items'>
-                <TbBrandStripe style={{ fontSize: '2.5em', color: '#FFD700' }} />
-                <h1>Brand Identity</h1>
-                <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I create innovative solutions that marry design with functionality. Let's work together to bring your digital ideas to life!</p>
+
+            <div data-aos="flip-up" class="card" style={{ width: "22rem" }}>
+                <div class="card-body">
+                    <TbBrandStripe style={{ fontSize: '2.5em', color: '#FFD700' }} />
+                    <h3>Brand Identity</h3>
+                    <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications.</p>
+                </div>
             </div>
-            <div data-aos="fade-left" className='items'>
-                <FaMagic style={{ fontSize: '2.5em', color: '#FFD700' }} />
-                <h1>Web Design</h1>
-                <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I create innovative solutions that marry design with functionality. Let's work together to bring your digital ideas to life!</p>
+
+            <div data-aos="fade-left" class="card" style={{ width: "22rem" }}>
+                <div class="card-body">
+                    <FaMagic style={{ fontSize: '2.5em', color: '#FFD700' }} />
+                    <h3>Web Design</h3>
+                    <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications.</p>
+                </div>
             </div>
+
         </div>
     );
 }
@@ -37,29 +58,39 @@ function TopContainer() {
 function BottomContainer() {
     return (
         <div className="bottomContainer ">
-            <div data-aos="fade-right" className='items'>
-                <BsFileRuled style={{ fontSize: '2.5em', color: '#FFD700' }} />
-                <h1>Mobile App</h1>
-                <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I create innovative solutions that marry design with functionality. Let's work together to bring your digital ideas to life!</p>
+
+            <div data-aos="fade-right" class="card" style={{ width: "22rem" }}>
+                <div class="card-body">
+                    <BsFileRuled style={{ fontSize: '2.5em', color: '#FFD700' }} />
+                    <h3>Mobile App</h3>
+                    <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications.</p>
+                </div>
             </div>
-            <div data-aos="flip-up" className='items'>
-                <IoAnalyticsOutline style={{ fontSize: '2.5em', color: '#FFD700' }} />
-                <h1>Analytics</h1>
-                <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I create innovative solutions that marry design with functionality. Let's work together to bring your digital ideas to life!</p>
+
+            <div data-aos="flip-up" class="card" style={{ width: "22rem" }}>
+                <div class="card-body">
+                    <IoAnalyticsOutline style={{ fontSize: '2.5em', color: '#FFD700' }} />
+                    <h3>Analytics</h3>
+                    <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications.</p>
+                </div>
             </div>
-            <div data-aos="fade-left" className='items'>
-                <GiPhotoCamera style={{ fontSize: '2.5em', color: '#FFD700' }} />
-                <h1>Photography</h1>
-                <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I create innovative solutions that marry design with functionality. Let's work together to bring your digital ideas to life!</p>
+
+            <div data-aos="fade-left" class="card" style={{ width: "22rem" }}>
+                <div class="card-body">
+                    <GiPhotoCamera style={{ fontSize: '2.5em', color: '#FFD700' }} />
+                    <h3>Photography</h3>
+                    <p>I'm a dedicated full-stack web developer, skilled in crafting dynamic and responsive web applications.</p>
+                </div>
             </div>
+
         </div>
     );
 }
 
 function Work() {
     return (
-        <div id='work' className="iDoContainer">
-            <div><h1 className='iDoHeading'>what i Do</h1></div>
+        <div id='work' className="work-container">
+            <HeadingContainer />
             <TopContainer />
             <BottomContainer />
         </div>
